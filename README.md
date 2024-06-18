@@ -19,10 +19,19 @@ In this tutorial, we strengthen our understanding of how DNS works by using Azur
 
 <h2>Steps</h2>
 
-- Connect/log into DC-1 as your domain admin account 
-- Step 2
-- Step 3
-- Step 4
+- Connect/log into DC-1 as your domain admin account
+- Connect/log into Client-1 as an admin
+- From Client-1 try to ping “mainframe” notice that it fails
+- Nslookup “mainframe” notice that it fails (no DNS record)
+- Create a DNS A-record on DC-1 for “mainframe” and have it point to DC-1’s Private IP address
+- Go back to Client-1 and try to ping it. Observe that it works
+- Local DNS Cache Exercise
+- CNAME Record Exercise
+
+
+
+
+
 
 <h2>Actions and Observations</h2>
 
